@@ -1,16 +1,16 @@
 <template>
   <div class="container h-100">
-    <div class="row h-100">
+    <div class="row h-100 align-items-center">
       <div class="col-lg-12">
 
-        <div class="row mb-2 pb-2 mt-4">
+        <div class="row mb-2 pb-2">
           <div class="col-lg-12 text-center text-light">
 
             <h1>
               <strong>NyWater.</strong>info
             </h1>
 
-            <p class="lead">
+            <p class="lead mb-0">
               Explore lead concentrations in NY public school drinking water
             </p>
 

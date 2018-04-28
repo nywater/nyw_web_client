@@ -7,14 +7,15 @@
           Built with
           <i class="fa fa-heart ml-1 text-danger"></i>
           &nbsp;by&nbsp;
-          <a href="https://github.com/NyWater" class='text-light' target='_blank'>NyWater</a>
+          <a href="https://github.com/NyWater" class='text-info' target='_blank'>NyWater.info</a>
           &nbsp;at&nbsp;
-          <a href="https://siena.edu" target='_blank' class='text-danger'>SaintsHack</a> 2018
+          <a href="https://siena.edu" target='_blank' class='text-success'>Siena College</a>
+          <a href="http://hackathon.sienacs.com/saintshack/" target='_blank' class='text-warning'>SaintsHack 2018</a>
         </div>
 
-        <div class="col-sm-6 text-right">
+        <div class="col-sm-6 text-right ">
           Data provided by
-          <a href="https://health.data.ny.gov/Health/Food-Service-Establishment-Inspections-Beginning-2/2hcc-shji" class='text-light' target='_blank'>health.data.ny.gov</a>
+          <a href="https://health.data.ny.gov/Health/Food-Service-Establishment-Inspections-Beginning-2/2hcc-shji" class='text-info' target='_blank'>health.data.ny.gov</a>
         </div>
 
       </div>
