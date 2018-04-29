@@ -11,14 +11,14 @@
       <!-- Left Nav -->
       <b-navbar-nav class="mr-auto">
         <b-nav-item href="#/schools">
-          <i class="fa fa-fw fa-university"></i>
+          <i class="fa fa-fw fa-search"></i>
           Explore
         </b-nav-item>
 
         <b-nav-item disabled>|</b-nav-item>
 
-        <b-nav-item href="#/about">
-          <i class="fa fa-fw fa-question-circle"></i>
+        <b-nav-item href="#/info">
+          <i class="fa fa-fw fa-university"></i>
           Understand
         </b-nav-item>
 
