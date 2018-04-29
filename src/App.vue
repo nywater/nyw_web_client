@@ -54,8 +54,6 @@ export default {
     overflow: hidden
 
     &.splash
-      // https://farm9.staticflickr.com/8510/8404289649_c1439edce5_o_d.jpg
-      // https://farm9.staticflickr.com/8648/15726596829_e2fb399ebd_k_d.jpg
       background-image: url('https://farm9.staticflickr.com/8648/15726596829_e2fb399ebd_k_d.jpg')
       background-repeat: no-repeat
       background-size: cover
@@ -65,7 +63,7 @@ export default {
       height: 100%
       width: 100%
 
-      .container, .contianer-fluid
+      .container, .container-fluid
         padding-top: 4.5rem
 
 </style>

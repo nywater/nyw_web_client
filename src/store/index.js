@@ -2,7 +2,7 @@ import Vue from 'vue'
 import Vuex from 'vuex'
 import main from './main'
 import school from './school'
-import city from './city'
+import district from './district'
 
 // Vuex Initialization
 Vue.use(Vuex)
@@ -13,6 +13,6 @@ export default new Vuex.Store({
   modules: {
     main,
     school,
-    city
+    district
   }
 })

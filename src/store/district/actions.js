@@ -3,7 +3,7 @@ import { API_ROOT } from './constants'
 
 // // // //
 
-// City actions
+// District actions
 export default {
   fetchCollection: ({ state, commit }) => {
     if (state.fetched) return

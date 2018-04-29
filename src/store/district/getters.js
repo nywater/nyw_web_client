@@ -1,9 +1,9 @@
 import _ from 'lodash'
 
-// City Module Getters
+// District Module Getters
 export default {
   collection: state => {
-    return state.collection.sort()
+    return _.compact(state.collection).sort()
   },
   fetching: state => {
     return state.fetching
@@ -23,10 +23,6 @@ export default {
     .filter(u => {
       return u.toLowerCase().indexOf(state.filter.toLowerCase()) !== -1
     })
-    // .orderBy(['data.report_data.warningCount', 'data.report_data.errorCount', 'data.report_data.noticeCount'], ['desc'])
-    // .orderBy(['desc'])
-    // .drop(state.start)
-    // .take(state.pageSize)
     .sortedUniq()
     .value()
   }

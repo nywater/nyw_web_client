@@ -17,7 +17,7 @@ export default {
   }),
   computed: {
     className () {
-      let css = ['list-group-item', 'list-group-item-action']
+      let css = ['list-group-item', 'list-group-item-action', 'bg-dark', 'text-light']
       if (this.$store.getters['school/selected_model_id'] === this.model._id) {
         css.push('active')
       }

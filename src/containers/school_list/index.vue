@@ -1,9 +1,9 @@
 <template>
-  <div class="container">
+  <div class="container-fluid">
 
     <div class="row">
       <div class="col-lg-4 col-md-6 col-sm-12">
-        <CitySearch :dispatch="true" />
+        <DistrictSearch :dispatch="true" />
         <Search module="school" placeholder="Filter Schools" />
         <Pagination module="school" />
         <SchoolList v-if="!fetching" />
@@ -23,7 +23,7 @@
 <script>
 import Search from '@/components/Search'
 import Loading from '@/components/Loading'
-import CitySearch from '@/components/CitySearch'
+import DistrictSearch from '@/components/DistrictSearch'
 import Pagination from '@/components/Pagination'
 import SchoolList from './SchoolList'
 import SchoolDetail from './SchoolDetail'
@@ -37,21 +37,21 @@ export default {
   components: {
     Search,
     Loading,
-    CitySearch,
+    DistrictSearch,
     Pagination,
     SchoolList,
     SchoolDetail
   },
   created () {
     this.hideSplash()
-    if (this.$route.query.city) {
-      this.$store.dispatch('school/setCity', this.$route.query.city)
+    if (this.$route.query.district) {
+      this.$store.dispatch('school/setDistrict', this.$route.query.district)
     } else {
       this.fetch()
     }
   },
   destroyed () {
-    this.$store.commit('school/city', '')
+    this.$store.commit('school/district', '')
   },
   methods: mapActions({
     fetch: 'school/fetchCollection',
