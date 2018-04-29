@@ -18,6 +18,10 @@
         </p>
 
         <p class="lead">
+          NYwater.info is in not affiliated with the State of New York in any official capacity.
+        </p>
+
+        <p class="lead">
           We currently only maintain data for schools in New York State.
         </p>
 

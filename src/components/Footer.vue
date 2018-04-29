@@ -7,7 +7,7 @@
           Built with
           <i class="fa fa-heart text-danger"></i>
           by
-          <a href="https://github.com/NyWater" class='text-primary' target='_blank'>NyWater.info</a>
+          <a href="https://github.com/rcos" class='text-danger' target='_blank'>RCOS</a>
           at
           <a href="https://siena.edu" target='_blank' class='text-success'>Siena College</a>
           <a href="http://hackathon.sienacs.com/saintshack/" target='_blank' class='text-warning'>SaintsHack 2018</a>

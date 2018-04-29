@@ -19,17 +19,36 @@
         <br>
         <br>
 
-        <p class="lead">
+        <p class="lead mt-2">
           Built with
           <i class="fa fa-heart text-danger"></i>
           by
-          <a href="https://github.com/NyWater" class='text-primary' target='_blank'>NyWater.info</a>
+          <a href="https://github.com/rcos" class='text-danger' target='_blank'>RCOS</a>
           at
           <a href="https://siena.edu" target='_blank' class='text-success'>Siena College</a>
           <a href="http://hackathon.sienacs.com/saintshack/" target='_blank' class='text-warning'>SaintsHack 2018</a>
         </p>
 
-        <p class="lead">
+        <!-- <p class="lead"> -->
+          <!-- Team -->
+        <!-- </p> -->
+
+        <br>
+
+        <div class="row justify-content-center">
+          <div class="col-lg-4">
+            Alexander Schwartzberg
+            <br>
+            <a href="https://github.com/aeksco" target='_blank'>@aeksco</a>
+          </div>
+          <div class="col-lg-4">
+            Francois Rice
+            <br>
+            <a href="https://github.com/francoisrice" target='_blank'>@francoisrice</a>
+          </div>
+        </div>
+
+        <p class="lead mt-4">
           Data provided by
           <a href="https://health.data.ny.gov/Health/Food-Service-Establishment-Inspections-Beginning-2/2hcc-shji" class='text-primary' target='_blank'>health.data.ny.gov</a>
         </p>
