@@ -2,7 +2,7 @@
   <div class="row">
     <div class="col-lg-12">
       <form class="form-inline pb-3">
-        <v-select @input="onInput" :options="cities" :value="city" placeholder="Select a city" />
+        <v-select @input="onInput" :options="cities" :value="city" placeholder="Select a NY school district" />
       </form>
     </div>
   </div>

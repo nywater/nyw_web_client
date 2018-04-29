@@ -14,14 +14,11 @@
           <div class="col-lg-12 text-center">
           </div>
           <div class="col-lg-12 text-center text-light">
-            <!-- <h1> -->
-              <!-- <strong>NyWater.</strong>info -->
-            <!-- </h1> -->
             <img class='welcome-logo mb-4' src="@/assets/logo.png">
             <br>
             <gh-btns-star slug="nywater/nywater.info" show-count></gh-btns-star>
 
-            <p class="lead mb-0">
+            <p class="lead mb-0 mt-2">
               <a href="#/schools">Explore</a> and <a href="#/about">learn</a> about lead concentrations in New York State public school drinking water
             </p>
 
