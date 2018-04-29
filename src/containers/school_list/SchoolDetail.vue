@@ -1,12 +1,14 @@
 <template>
   <div class="row">
 
-    <div class="col-lg-12" v-if="model && model.beds_code">
+    <div class="col-sm-12 col-md-6" v-if="model && model.beds_code">
       <p class="lead font-weight-bold mb-0">
         {{ model.name }}
         <small class="text-muted">{{ model.district }}</small>
       </p>
-
+    </div>
+    <div class="col-sm-12 col-md-6 text-right" v-if="model && model.beds_code">
+      <span class="badge badge-primary px-1 py-2">{{ model.sector }}</span>
       <!-- <a :href="mapUrl" target='_blank' v-b-tooltip.hover.bottom title="Open in Google Maps"> -->
         <!-- {{ address }} -->
       <!-- </a> -->
@@ -17,7 +19,6 @@
     </div>
 
     <div class="col-lg-12">
-      <span class="badge badge-primary">{{ model.sector }}</span>
       <span class="badge badge-primary">Lead Free: {{ model.lead_free }}</span>
       <span class="badge badge-primary">Total Outlets: {{ model.outlets }}</span>
       <span class="badge badge-primary">Outlets Sampled: {{ model.outlets_sampled_pre_2016 }}</span>

@@ -1,6 +1,6 @@
 import _ from 'lodash'
 
-// City Module Getters
+// District Module Getters
 export default {
   collection: state => {
     return _.compact(state.collection).sort()

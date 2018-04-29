@@ -9,5 +9,5 @@ export default {
   fetching: false,
   fetching_model: false,
   filter: '',
-  city: ''
+  district: ''
 }

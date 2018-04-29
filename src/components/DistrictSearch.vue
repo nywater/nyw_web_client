@@ -2,7 +2,7 @@
   <div class="row">
     <div class="col-lg-12">
       <form class="form-inline pb-3">
-        <v-select @input="onInput" :options="cities" :value="city" placeholder="Select a NY school district" />
+        <v-select @input="onInput" :options="districts" :value="district" placeholder="Select a NY school district" />
       </form>
     </div>
   </div>
@@ -16,36 +16,36 @@ import router from '@/routers'
 import { mapGetters, mapMutations, mapActions } from 'vuex'
 
 export default {
-  name: 'city_search',
+  name: 'DistrictSearch',
   props: ['dispatch'],
   components: {
     vSelect
   },
   created () {
-    this.fetchCities()
+    this.fetch()
   },
   methods: {
     ...mapActions({
-      fetchCities: 'city/fetchCollection',
-      setCity: 'school/setCity'
+      fetch: 'district/fetchCollection',
+      setDistrict: 'school/setDistrict'
     }),
     ...mapMutations({
-      updateCity: 'school/city'
+      updateDistrict: 'school/district'
     }),
-    onInput (city) {
-      if (city === '') return
+    onInput (district) {
+      if (district === '') return
       if (this.dispatch) {
-        this.setCity(city)
+        this.setDistrict(district)
       } else {
-        this.updateCity(city)
+        this.updateDistrict(district)
         router.push('/schools')
       }
     }
   },
   computed: mapGetters({
-    city: 'school/city',
-    cities: 'city/collection',
-    fetching: 'city/fetching'
+    district: 'school/district',
+    districts: 'district/collection',
+    fetching: 'district/fetching'
   })
 }
 </script>

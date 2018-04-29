@@ -27,7 +27,7 @@
 
         <div class="row py-3">
           <div class="col-sm-12 v-select-lg">
-            <CitySearch />
+            <DistrictSearch />
           </div>
         </div>
 
@@ -40,14 +40,14 @@
 
 <script>
 import { mapActions } from 'vuex'
-import CitySearch from '@/components/CitySearch'
+import DistrictSearch from '@/components/DistrictSearch'
 export default {
   name: 'main_home',
   metaInfo: {
     title: 'Home'
   },
   components: {
-    CitySearch
+    DistrictSearch
   },
   mounted () {
     this.showSplash()

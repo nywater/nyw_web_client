@@ -22,10 +22,10 @@ export default {
     state.currentPage = 1
     state.filter = filter
   },
-  city (state, city) {
+  district (state, district) {
     state.currentPage = 1
     state.filter = ''
-    state.city = city
+    state.district = district
   },
   showingInactive (state, show) {
     state.showingInactive = show
