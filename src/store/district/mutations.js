@@ -1,4 +1,4 @@
-// City Module mutations
+// District Module mutations
 export default {
   collection (state, collection) {
     state.collection = collection

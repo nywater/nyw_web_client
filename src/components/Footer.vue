@@ -5,16 +5,17 @@
 
         <div class="col-sm-6">
           Built with
-          <i class="fa fa-heart ml-1 text-danger"></i>
-          &nbsp;by&nbsp;
-          <a href="https://github.com/NyWater" class='text-light' target='_blank'>NyWater</a>
-          &nbsp;at&nbsp;
-          <a href="https://siena.edu" target='_blank' class='text-danger'>SaintsHack</a> 2018
+          <i class="fa fa-heart text-danger"></i>
+          by
+          <a href="https://github.com/rcos" class='text-danger' target='_blank'>RCOS</a>
+          at
+          <a href="https://siena.edu" target='_blank' class='text-success'>Siena College</a>
+          <a href="http://hackathon.sienacs.com/saintshack/" target='_blank' class='text-warning'>SaintsHack 2018</a>
         </div>
 
-        <div class="col-sm-6 text-right">
+        <div class="col-sm-6 text-right ">
           Data provided by
-          <a href="https://health.data.ny.gov/Health/Food-Service-Establishment-Inspections-Beginning-2/2hcc-shji" class='text-light' target='_blank'>health.data.ny.gov</a>
+          <a href="https://health.data.ny.gov/Health/Food-Service-Establishment-Inspections-Beginning-2/2hcc-shji" class='text-primary' target='_blank'>health.data.ny.gov</a>
         </div>
 
       </div>
@@ -27,13 +28,12 @@ export default {}
 </script>
 
 <style lang="sass">
-
-  footer.footer
-    z-index: 1000
-    position: fixed
-    width: 100%
-    bottom: 0
-    line-height: 3rem
-    .container-fluid
-      background: rgba(#333333, 0.5)
+footer.footer
+  z-index: 1000
+  position: fixed
+  width: 100%
+  bottom: 0
+  line-height: 3rem
+  .container-fluid
+    background: rgba(#333333, 0.8)
 </style>

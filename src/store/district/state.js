@@ -1,4 +1,4 @@
-// City Module State
+// District Module State
 export default {
   collection: [],
   fetching: false,

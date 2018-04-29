@@ -70,17 +70,17 @@ export default {
     debouncedFetch(filter)
   },
 
-  // setCity
-  // Updates the current city query
-  setCity ({ commit, dispatch }, city) {
-    commit('city', city)
+  // setDistrict
+  // Updates the current district query
+  setDistrict ({ commit, dispatch }, district) {
+    commit('district', district)
     dispatch('fetchCollection')
   },
 
   // clearQuery
-  // Clears state.city and state.filter
+  // Clears state.district and state.filter
   clearQuery ({ commit, dispatch }) {
-    commit('city', 'Troy')
+    commit('district', 'Troy')
     commit('filter', '')
     commit('currentPage', 1)
     dispatch('fetchCollection')

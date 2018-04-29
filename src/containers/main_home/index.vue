@@ -1,17 +1,25 @@
 <template>
   <div class="container h-100">
-    <div class="row h-100">
+
+    <span class='splash-credit text-light'>
+      Photo credit:
+      <a href="https://google.com" target="_blank">foo@bar</a>
+    </span>
+
+    <div class="row h-100 justify-content-center align-items-center">
       <div class="col-lg-12">
 
-        <div class="row mb-2 pb-2 mt-4">
+
+        <div class="row mb-2 pb-2">
+          <div class="col-lg-12 text-center">
+          </div>
           <div class="col-lg-12 text-center text-light">
+            <img class='welcome-logo mb-4' src="@/assets/logo.png">
+            <br>
+            <gh-btns-star slug="nywater/nywater.info" show-count></gh-btns-star>
 
-            <h1>
-              <strong>NyWater.</strong>info
-            </h1>
-
-            <p class="lead">
-              Explore lead concentrations in NY public school drinking water
+            <p class="lead mb-0 mt-2">
+              <a href="#/schools">Explore</a> and <a href="#/about">learn</a> about lead concentrations in New York State public school drinking water
             </p>
 
           </div>
@@ -19,7 +27,7 @@
 
         <div class="row py-3">
           <div class="col-sm-12 v-select-lg">
-            <CitySearch />
+            <DistrictSearch />
           </div>
         </div>
 
@@ -32,22 +40,14 @@
 
 <script>
 import { mapActions } from 'vuex'
-import CitySearch from '@/components/CitySearch'
+import DistrictSearch from '@/components/DistrictSearch'
 export default {
   name: 'main_home',
   metaInfo: {
     title: 'Home'
   },
   components: {
-    CitySearch
-  },
-  data () {
-    return {
-      queryString: 'Shalimar',
-      buttonText: 'Checked',
-      showButton: true,
-      results: []
-    }
+    DistrictSearch
   },
   mounted () {
     this.showSplash()
@@ -70,4 +70,19 @@ export default {
               padding: .5rem 0
               align-items: center
               font-size: 120%
+
+  span.splash-credit
+    position: absolute
+    left: 0
+    top: 0
+    margin-top: 4.5rem
+    margin-left: 1rem
+
+  .gh-button-container
+    float: none !important
+
+  img.welcome-logo
+    height: 10rem
+    width: 10rem
+
 </style>

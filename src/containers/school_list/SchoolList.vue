@@ -3,7 +3,7 @@
     <div class="col-lg-12">
       <ul class="list-group">
         <SchoolChild :model="model" v-for="model in collection" :key="model._id" v-if="collection[0]" />
-        <li class="list-group-item list-group-item-warning text-center py-4" v-if="!collection[0]">
+        <li class="list-group-item bg-dark border-warning text-warning text-center py-4" v-if="!collection[0]">
           <i class="fa fa-frown-o fa-lg"></i>
           <br>
           No schools found

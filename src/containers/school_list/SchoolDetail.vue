@@ -1,12 +1,14 @@
 <template>
   <div class="row">
 
-    <div class="col-lg-12" v-if="model && model.beds_code">
+    <div class="col-sm-12 col-md-6" v-if="model && model.beds_code">
       <p class="lead font-weight-bold mb-0">
         {{ model.name }}
         <small class="text-muted">{{ model.district }}</small>
       </p>
-
+    </div>
+    <div class="col-sm-12 col-md-6 text-right" v-if="model && model.beds_code">
+      <span class="badge badge-primary px-1 py-2">{{ model.sector }}</span>
       <!-- <a :href="mapUrl" target='_blank' v-b-tooltip.hover.bottom title="Open in Google Maps"> -->
         <!-- {{ address }} -->
       <!-- </a> -->
@@ -14,6 +16,19 @@
 
     <div class="col-lg-12">
       <hr>
+    </div>
+
+    <div class="col-lg-12">
+      <span class="badge badge-lg badge-primary">Lead Free: {{ model.lead_free }}</span>
+      <span class="badge badge-lg badge-primary">Total Outlets: {{ model.outlets }}</span>
+      <span class="badge badge-lg badge-primary">Outlets Sampled: {{ model.outlets_sampled_pre_2016 }}</span>
+      <span class="badge badge-lg badge-primary">Outlets LEQ 15 PPB: {{ model.outlets_leq_15ppb }}</span>
+      <span class="badge badge-lg badge-primary">Outlets GT 15 PPB: {{ model.outlets_gt_15ppb }}</span>
+
+      <span class="badge badge-lg badge-primary">
+        <i class="fa fa-calendar-o"></i>
+        {{ model.sampling_update_date }}
+      </span>
     </div>
 
     <div class="col-lg-12">
@@ -50,3 +65,8 @@ export default {
   }
 }
 </script>
+
+<style lang="sass">
+  span.badge-lg
+    font-size: 1rem
+</style>

@@ -22,8 +22,8 @@ export default {
   filter: state => {
     return state.filter
   },
-  city: state => {
-    return state.city
+  district: state => {
+    return state.district
   },
   showingInactive: state => {
     return state.showingInactive
@@ -33,13 +33,13 @@ export default {
   },
   apiQuery: state => {
     let query = {}
-    if (state.city) query.city = state.city
+    if (state.district) query.district = state.district
     if (state.filter) query.q = state.filter
     return query
   },
   fetchUrl: state => {
     let fetchUrl = API_ROOT
-    if (state.city || state.filter) {
+    if (state.district || state.filter) {
       fetchUrl += '/search'
     }
     return fetchUrl
