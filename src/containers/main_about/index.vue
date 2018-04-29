@@ -50,7 +50,7 @@
 
         <p class="lead mt-4">
           Data provided by
-          <a href="https://health.data.ny.gov/Health/Food-Service-Establishment-Inspections-Beginning-2/2hcc-shji" class='text-primary' target='_blank'>health.data.ny.gov</a>
+          <a href="https://health.data.ny.gov/Health/Lead-Testing-in-School-Drinking-Water-Sampling-and/rkyy-fsv9" class='text-primary' target='_blank'>health.data.ny.gov</a>
         </p>
 
 
