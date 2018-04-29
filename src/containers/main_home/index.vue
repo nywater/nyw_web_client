@@ -3,7 +3,7 @@
 
     <span class='splash-credit text-light'>
       Photo credit:
-      <a href="https://google.com" target="_blank">foo@bar</a>
+      <a href="https://flickr.com" target="_blank">Flickr</a>
     </span>
 
     <div class="row h-100 justify-content-center align-items-center">
