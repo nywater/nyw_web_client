@@ -19,11 +19,16 @@
     </div>
 
     <div class="col-lg-12">
-      <span class="badge badge-primary">Lead Free: {{ model.lead_free }}</span>
-      <span class="badge badge-primary">Total Outlets: {{ model.outlets }}</span>
-      <span class="badge badge-primary">Outlets Sampled: {{ model.outlets_sampled_pre_2016 }}</span>
-      <span class="badge badge-primary">Outlets LEQ 15 PPB: {{ model.outlets_leq_15ppb }}</span>
-      <span class="badge badge-primary">Outlets GT 15 PPB: {{ model.outlets_gt_15ppb }}</span>
+      <span class="badge badge-lg badge-primary">Lead Free: {{ model.lead_free }}</span>
+      <span class="badge badge-lg badge-primary">Total Outlets: {{ model.outlets }}</span>
+      <span class="badge badge-lg badge-primary">Outlets Sampled: {{ model.outlets_sampled_pre_2016 }}</span>
+      <span class="badge badge-lg badge-primary">Outlets LEQ 15 PPB: {{ model.outlets_leq_15ppb }}</span>
+      <span class="badge badge-lg badge-primary">Outlets GT 15 PPB: {{ model.outlets_gt_15ppb }}</span>
+
+      <span class="badge badge-lg badge-primary">
+        <i class="fa fa-calendar-o"></i>
+        {{ model.sampling_update_date }}
+      </span>
     </div>
 
     <div class="col-lg-12">
@@ -60,3 +65,8 @@ export default {
   }
 }
 </script>
+
+<style lang="sass">
+  span.badge-lg
+    font-size: 1rem
+</style>
