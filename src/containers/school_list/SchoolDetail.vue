@@ -17,6 +17,15 @@
     </div>
 
     <div class="col-lg-12">
+      <span class="badge badge-primary">{{ model.sector }}</span>
+      <span class="badge badge-primary">Lead Free: {{ model.lead_free }}</span>
+      <span class="badge badge-primary">Total Outlets: {{ model.outlets }}</span>
+      <span class="badge badge-primary">Outlets Sampled: {{ model.outlets_sampled_pre_2016 }}</span>
+      <span class="badge badge-primary">Outlets LEQ 15 PPB: {{ model.outlets_leq_15ppb }}</span>
+      <span class="badge badge-primary">Outlets GT 15 PPB: {{ model.outlets_gt_15ppb }}</span>
+    </div>
+
+    <div class="col-lg-12">
       <pre class='bg-dark text-light'>{{ model }}</pre>
       <!-- <ul class="list-group"> -->
         <!-- <InspectionChild :inspection="inspection" v-for="inspection in inspections" :key="inspection.date" /> -->

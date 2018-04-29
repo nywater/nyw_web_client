@@ -23,10 +23,6 @@ export default {
     .filter(u => {
       return u.toLowerCase().indexOf(state.filter.toLowerCase()) !== -1
     })
-    // .orderBy(['data.report_data.warningCount', 'data.report_data.errorCount', 'data.report_data.noticeCount'], ['desc'])
-    // .orderBy(['desc'])
-    // .drop(state.start)
-    // .take(state.pageSize)
     .sortedUniq()
     .value()
   }

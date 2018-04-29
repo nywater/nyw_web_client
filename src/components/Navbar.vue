@@ -12,19 +12,27 @@
       <b-navbar-nav class="mr-auto">
         <b-nav-item href="#/schools">
           <i class="fa fa-fw fa-university"></i>
-          Schools
+          Explore
         </b-nav-item>
 
         <b-nav-item disabled>|</b-nav-item>
 
         <b-nav-item href="#/about">
           <i class="fa fa-fw fa-question-circle"></i>
-          About
+          Understand
         </b-nav-item>
+
       </b-navbar-nav>
 
       <!-- Right Nav -->
       <b-navbar-nav class="ml-auto">
+        <b-nav-item href="#/about">
+          <i class="fa fa-fw fa-question-circle"></i>
+          About
+        </b-nav-item>
+
+        <b-nav-item disabled>|</b-nav-item>
+
         <b-nav-item href="#/terms">
           <i class="fa fa-fw fa-info-circle"></i>
           Terms of Use
@@ -33,8 +41,8 @@
         <b-nav-item disabled>|</b-nav-item>
 
         <b-nav-item target="_blank" href="http://nywater.info/docs/">
-          <i class="fa fa-fw fa-book"></i>
-          Docs
+          <i class="fa fa-fw fa-database"></i>
+          API
         </b-nav-item>
 
         <b-nav-item disabled>|</b-nav-item>

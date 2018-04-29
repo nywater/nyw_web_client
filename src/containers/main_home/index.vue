@@ -1,17 +1,24 @@
 <template>
   <div class="container h-100">
+
+    <span class='splash-credit text-light'>
+      Photo credit:
+      <a href="https://google.com" target="_blank">foo@bar</a>
+    </span>
+
     <div class="row h-100 align-items-center">
       <div class="col-lg-12">
 
         <div class="row mb-2 pb-2">
           <div class="col-lg-12 text-center text-light">
 
+
             <h1>
               <strong>NyWater.</strong>info
             </h1>
 
             <p class="lead mb-0">
-              <a href="#/schools">Expore</a> and <a href="#/about">understand</a> lead concentrations in New York State public school drinking water
+              <a href="#/schools">Explore</a> and <a href="#/about">understand</a> lead concentrations in New York State public school drinking water
             </p>
 
           </div>
@@ -20,6 +27,10 @@
         <div class="row py-3">
           <div class="col-sm-12 v-select-lg">
             <CitySearch />
+          </div>
+
+          <div class="col-lg-12 text-center">
+            <gh-btns-star slug="aeksco/blazeplate" show-count></gh-btns-star>
           </div>
         </div>
 
@@ -40,14 +51,6 @@ export default {
   },
   components: {
     CitySearch
-  },
-  data () {
-    return {
-      queryString: 'Shalimar',
-      buttonText: 'Checked',
-      showButton: true,
-      results: []
-    }
   },
   mounted () {
     this.showSplash()
@@ -70,4 +73,11 @@ export default {
               padding: .5rem 0
               align-items: center
               font-size: 120%
+
+  span.splash-credit
+    position: absolute
+    left: 0
+    top: 0
+    margin-top: 4.5rem
+    margin-left: 1rem
 </style>
