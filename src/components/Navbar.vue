@@ -1,8 +1,9 @@
 <template>
-  <b-navbar toggleable="md" type="dark" variant="info" fixed="top">
+  <b-navbar toggleable="md" type="dark" variant="primary" fixed="top">
 
     <b-navbar-brand href="#/">
-      <strong>NyWater.</strong>info
+      <img class='logo' src="@/assets/logo.png">
+      <strong>NY</strong>water.info
     </b-navbar-brand>
 
     <b-navbar-toggle target="nav_collapse"></b-navbar-toggle>
@@ -19,7 +20,7 @@
 
         <b-nav-item href="#/info">
           <i class="fa fa-fw fa-university"></i>
-          Understand
+          Learn
         </b-nav-item>
 
       </b-navbar-nav>
@@ -69,9 +70,13 @@ export default {
 @import '../sass/vendor'
 
 nav.navbar.navbar-dark.fixed-top
-  background: rgba($info, 0.8) !important
+  background: rgba($primary, 0.8) !important
+  // background: rgba(#69dbf9, 0.8) !important
 
   a.navbar-brand
+    img.logo
+      width: 2rem
+      height: 2rem
     letter-spacing: 0.15rem
     strong
       font-weight: 600

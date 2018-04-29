@@ -50,8 +50,14 @@ export default {
 }
 </script>
 
-<style type="text/css">
-  .v-select {
-    width: 100%;
-  }
+<style lang="sass">
+  .v-select
+    width: 100%
+
+    .dropdown-toggle
+      border-color: #f3f3f3
+      background: #f3f3f3
+
+    ul.dropdown-menu
+      color: #333333 !important
 </style>

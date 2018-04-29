@@ -9,18 +9,20 @@
     <div class="row h-100 justify-content-center align-items-center">
       <div class="col-lg-12">
 
+
         <div class="row mb-2 pb-2">
           <div class="col-lg-12 text-center">
           </div>
           <div class="col-lg-12 text-center text-light">
-            <h1>
-              <strong>NyWater.</strong>info
-            </h1>
-
-            <gh-btns-star slug="aeksco/blazeplate" show-count></gh-btns-star>
+            <!-- <h1> -->
+              <!-- <strong>NyWater.</strong>info -->
+            <!-- </h1> -->
+            <img class='welcome-logo mb-4' src="@/assets/logo.png">
+            <br>
+            <gh-btns-star slug="nywater/nywater.info" show-count></gh-btns-star>
 
             <p class="lead mb-0">
-              <a href="#/schools">Explore</a> and <a href="#/about">understand</a> lead concentrations in New York State public school drinking water
+              <a href="#/schools">Explore</a> and <a href="#/about">learn</a> about lead concentrations in New York State public school drinking water
             </p>
 
           </div>
@@ -81,4 +83,9 @@ export default {
 
   .gh-button-container
     float: none !important
+
+  img.welcome-logo
+    height: 10rem
+    width: 10rem
+
 </style>
