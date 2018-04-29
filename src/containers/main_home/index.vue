@@ -11,7 +11,7 @@
             </h1>
 
             <p class="lead mb-0">
-              Explore lead concentrations in NY public school drinking water
+              <a href="#/schools">Expore</a> and <a href="#/about">understand</a> lead concentrations in New York State public school drinking water
             </p>
 
           </div>

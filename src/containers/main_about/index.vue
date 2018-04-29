@@ -4,7 +4,7 @@
 
     <div class="row align-items-center">
       <div class="col-lg-12 text-center">
-        <h2 class="display-2 lead">TODO - add about page</h2>
+        <h2>NyWater.info</h2>
       </div>
     </div>
 

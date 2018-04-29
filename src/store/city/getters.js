@@ -3,7 +3,7 @@ import _ from 'lodash'
 // City Module Getters
 export default {
   collection: state => {
-    return state.collection.sort()
+    return _.compact(state.collection).sort()
   },
   fetching: state => {
     return state.fetching

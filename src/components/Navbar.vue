@@ -58,6 +58,11 @@ export default {
 </script>
 
 <style lang="sass">
+@import '../sass/vendor'
+
+nav.navbar.navbar-dark.fixed-top
+  background: rgba($info, 0.8) !important
+
   a.navbar-brand
     letter-spacing: 0.15rem
     strong
