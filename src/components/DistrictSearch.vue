@@ -55,9 +55,10 @@ export default {
     width: 100%
 
     .dropdown-toggle
-      border-color: #f3f3f3
-      background: #f3f3f3
+      border-color: #f3f3f3 !important
+      background: #f3f3f3 !important
 
     ul.dropdown-menu
       color: #333333 !important
+      background: #f3f3f3 !important
 </style>
