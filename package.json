@@ -13,10 +13,12 @@
   "dependencies": {
     "bootstrap": "^4.0.0-beta.2",
     "bootstrap-vue": "^1.0.2",
+    "chart.js": "^2.7.2",
     "lodash": "^4.17.4",
     "moment": "^2.21.0",
     "qs": "^6.5.1",
     "vue": "^2.5.2",
+    "vue-chartjs": "^3.3.1",
     "vue-github-buttons": "^2.0.5",
     "vue-meta": "^1.2.0",
     "vue-router": "^3.0.1",
